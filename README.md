@@ -4,6 +4,7 @@
 
 ## BigData
 Puede llegar a ser difícil llegar a describir que es el Big Data, pero podemos partir de una frase muy interesante 
+
 *“Si le hubiera preguntado a la gente qué quería, me hubieran dicho que un caballo más rápido” –Hery Ford* 
 
 Esta frase ejemplifica perfectamente la diferencia entre las cosas que queremos y aquellas que necesitamos, pero **¿Cómo se lo que la gente necesita?** 
@@ -17,3 +18,16 @@ Fue en ese preciso momento en el que la mayoría de las empresas actuales comenz
 Posteriormente, después de que las empresas empezaran a registrar todo surgió un gran problema, cada vez era más difícil realizar los cálculos para recomendar productos, porque los registros eran gigantescos, también, las empresas pagaban cantidades exorbitantes para poder procesar esos registros, ya que, al ser mucho, simplemente necesitas computadoras con los mejores procesadores para poder analizar la información, además, todo el tiempo se iban creando más registros y los datos se iban haciendo cada vez más grandes, fue entonces cuando surgió naturalmente una pregunta, **¿Cómo puedo procesar grandes volúmenes de información?** 
 
 En ese momento nace el **Big Data**, que como su nombre lo dice, es la rama del cómputo que se encarga de *procesar grandes volúmenes de información*, y tomando en cuenta el mundo en el que vivimos actualmente, datos tenemos de sobra; Otra pregunta que nos podemos realizar y es completamente valida (por la misma ambigüedad de la definición) es **¿Cuánto es ‘grandes volúmenes de información’?** En este momento es cuando muchos expertos del área difieren entre ellos, para algunos “Mucha información” son apenas *MegaBytes* de información, mientras que otros lo consideran a partir de *PetaBytes*, una diferencia bastante notoria tomando en cuenta que un *PetaByte* equivale a 1,000,000,000 *MegaBytes*; Propongo tomar como base para esta definición el punto de vista que tienen los expertos de Microsoft, ellos consideran que se está hablando de Big Data a partir de **4 *TeraBytes*** de datos, es decir más de 500,000 *MegaBytes*.
+
+Ahora que hemos dado un recuento en general sobre cómo surge la necesidad de manejar grandes volúmenes de datos, veremos en los siguientes capítulos las tecnologías que están dentro de esta rama de la computación abarcando los siguientes módulos:
+
+[Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData)
+[Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData)
+[MapReduce en Hadoop](https://github.com/miguelmontcerv/BigData)
+[Operaciones básicas de archivos de línea de comandos de HDFS](https://github.com/miguelmontcerv/BigData)
+[Introducción a Apache Spark](https://github.com/miguelmontcerv/BigData)
+[Manipulación de datos con Python y R en Apache Spark](https://github.com/miguelmontcerv/BigData)
+[Análisis de Big Data con Spark](https://github.com/miguelmontcerv/BigData)
+[Introducción a NoSQL: Apache Cassandra](https://github.com/miguelmontcerv/BigData)
+
+Espero este resumen les pueda ser de gran ayuda y siempre recuerden *Los datos nunca mienten*.
