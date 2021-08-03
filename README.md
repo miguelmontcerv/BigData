@@ -22,12 +22,19 @@ En ese momento nace el **Big Data**, que como su nombre lo dice, es la rama del 
 Ahora que hemos dado un recuento en general sobre cómo surge la necesidad de manejar grandes volúmenes de datos, veremos en los siguientes capítulos las tecnologías que están dentro de esta rama de la computación abarcando los siguientes módulos:
 
 [Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData)
+
 [Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData)
+
 [MapReduce en Hadoop](https://github.com/miguelmontcerv/BigData)
+
 [Operaciones básicas de archivos de línea de comandos de HDFS](https://github.com/miguelmontcerv/BigData)
+
 [Introducción a Apache Spark](https://github.com/miguelmontcerv/BigData)
+
 [Manipulación de datos con Python y R en Apache Spark](https://github.com/miguelmontcerv/BigData)
+
 [Análisis de Big Data con Spark](https://github.com/miguelmontcerv/BigData)
+
 [Introducción a NoSQL: Apache Cassandra](https://github.com/miguelmontcerv/BigData)
 
 Espero este resumen les pueda ser de gran ayuda y siempre recuerden *Los datos nunca mienten*.
