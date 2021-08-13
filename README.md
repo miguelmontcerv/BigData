@@ -21,7 +21,7 @@ En ese momento nace el **Big Data**, que como su nombre lo dice, es la rama del 
 
 Ahora que hemos dado un recuento en general sobre cómo surge la necesidad de manejar grandes volúmenes de datos, veremos en los siguientes capítulos las tecnologías que están dentro de esta rama de la computación abarcando los siguientes módulos:
 
-[Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData)
+[Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData/tree/main/Introduccion_BigData)
 
 [Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData/tree/main/Introduccion_BigData)
 
