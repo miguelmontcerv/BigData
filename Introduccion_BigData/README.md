@@ -25,4 +25,5 @@
     * Diseño de tareas distribuidas a través de key-value pairs
     * Dichas tareas se procesan en diferentes nodos físicos de procesamiento distribuido
     * El output del procesamiento se almacena en un sistema HDFS (Hadoop Distributed Fyle System), el cual parece haberse desarrollado en una sola máquina pues fue integrado en un solo archivo.
+    
   Para hacernos la vida más fácil, Apache, que es una compañía de software libre, ha desarrollado grandes avances en esta área, como Hadoop, Spartk y Cassandra.
