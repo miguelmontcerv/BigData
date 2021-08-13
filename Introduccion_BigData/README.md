@@ -16,7 +16,7 @@
     * Variedad
     * Veracidad 
     * Valor
-- Introducción a Apache  
+- **Introducción a Apache**  
   Hasta este momento hemos comprendido que es el big data y las cinco características que debemos considerar para desarrollarla, ahora debemos entender cómo es que realiza el procesamiento, para ello debemos de comprender una tarea muy interesante *el cómputo paralelo*: 
   Imagina que escaneamos 1000 Terabytes de datos en un solo nodo de procesamiento a una velocidad de 100 Megabytes por segundo: ¡tardaremos aproximadamente 24 días en a completar la tarea!
   Ahora, imaginemos que de forma "paralela", pongamos a procesar esos 1000 TB en 1000 distintos nodos: ¡tardaríamos tan solo 35 minutos!
@@ -25,5 +25,7 @@
     * Diseño de tareas distribuidas a través de key-value pairs
     * Dichas tareas se procesan en diferentes nodos físicos de procesamiento distribuido
     * El output del procesamiento se almacena en un sistema HDFS (Hadoop Distributed Fyle System), el cual parece haberse desarrollado en una sola máquina pues fue integrado en un solo archivo.
-    
+
   Para hacernos la vida más fácil, Apache, que es una compañía de software libre, ha desarrollado grandes avances en esta área, como Hadoop, Spartk y Cassandra.
+### PostWork
+Como había mencionado, estoy muy interesado en conocer cómo es que funcionan los sistemas bancarios, es por ello que me gustaría realizar un proyecto sobre el uso del big data en la industria bancaria, por el momento no tengo idea de donde sacare la información, pero si no llego a realizar un programa que administre la data por este u otro tipo de problema, al menos espero realizar una buena investigación.
