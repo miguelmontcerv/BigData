@@ -10,9 +10,9 @@
   Es justo en este momento, cuando las empresas de cualquier tipo empiezan a tener que almacenar volúmenes gigantescos de datos, y eso no es todo, sino que tienen que empezar a realizar consultas rápidamente, tomando el ejemplo de los bancos mundiales y las actualizaciones que mandan sobre el precio de las divisas, si un sistema informático no es lo suficientemente rápido, podría conllevar a problemas económicos nacionales o incluso internacionales.
 
   - **Las cinco V's del Big Data** 
-  Hace algunos meses estuve en una conferencia sobre Big Data que impartió Oracle, que es la empresa de datos más importante del mundo, en esta platica el jefe de Big Data en México nos explicó un poco sobre las V’s de esta rama del cómputo, pero el únicamente mencionó tres, pero en la última investigación que realice mencionan otras dos:. 
-  * Volumen
-  * Velocidad
-  * Variedad
-  * Veracidad 
-  * Valor
+    Hace algunos meses estuve en una conferencia sobre Big Data que impartió Oracle, que es la empresa de datos más importante del mundo, en esta platica el jefe de Big Data en México nos explicó un poco sobre las V’s de esta rama del cómputo, pero el únicamente mencionó tres, pero en la última investigación que realice mencionan otras dos: 
+    * Volumen
+    * Velocidad
+    * Variedad
+    * Veracidad 
+    * Valor
