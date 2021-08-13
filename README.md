@@ -23,7 +23,7 @@ Ahora que hemos dado un recuento en general sobre cómo surge la necesidad de ma
 
 [Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData)
 
-[Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData)
+[Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData/tree/main/Introduccion_BigData)
 
 [MapReduce en Hadoop](https://github.com/miguelmontcerv/BigData)
 
