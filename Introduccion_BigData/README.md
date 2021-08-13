@@ -16,3 +16,13 @@
     * Variedad
     * Veracidad 
     * Valor
+- Introducción a Apache  
+  Hasta este momento hemos comprendido que es el big data y las cinco características que debemos considerar para desarrollarla, ahora debemos entender cómo es que realiza el procesamiento, para ello debemos de comprender una tarea muy interesante *el cómputo paralelo*: 
+  Imagina que escaneamos 1000 Terabytes de datos en un solo nodo de procesamiento a una velocidad de 100 Megabytes por segundo: ¡tardaremos aproximadamente 24 días en a completar la tarea!
+  Ahora, imaginemos que de forma "paralela", pongamos a procesar esos 1000 TB en 1000 distintos nodos: ¡tardaríamos tan solo 35 minutos!
+  Entonces, ¿Cómo puedo implementar el computo paralelo para procesar Big Data? La respuesta es sencilla: ¡Apache Hadoop! Básicamente lo que hace Hadoop es distribuir las tareas de procesamiento de datos en varios nodos de computo, todo lo realiza gracias al *modelo de programación MapReduce* que básicamente hace lo siguiente:
+    * Almacenamiento de la data en archivos distribuidos
+    * Diseño de tareas distribuidas a través de key-value pairs
+    * Dichas tareas se procesan en diferentes nodos físicos de procesamiento distribuido
+    * El output del procesamiento se almacena en un sistema HDFS (Hadoop Distributed Fyle System), el cual parece haberse desarrollado en una sola máquina pues fue integrado en un solo archivo.
+  Para hacernos la vida más fácil, Apache, que es una compañía de software libre, ha desarrollado grandes avances en esta área, como Hadoop, Spartk y Cassandra.
