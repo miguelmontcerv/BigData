@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="fondo.png" />
+  <img src="portada.png" />
 </p>
