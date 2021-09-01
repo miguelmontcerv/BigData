@@ -23,18 +23,18 @@ Ahora que hemos dado un recuento en general sobre cómo surge la necesidad de ma
 
 [Introducción al Big Data y al ambiente Apache](https://github.com/miguelmontcerv/BigData/tree/main/Introduccion_BigData)
 
-[Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData/tree/main/Introduccion_BigData)
+[Introducción a Apache Hadoop](https://github.com/miguelmontcerv/BigData/tree/main/Introducci%C3%B3n%20a%20Apache%20Hadoop)
 
-[MapReduce en Hadoop](https://github.com/miguelmontcerv/BigData)
+[YARN y Sistema de Ficheros HDFS en Hadoop](https://github.com/miguelmontcerv/BigData/tree/main/YARN%20y%20Sistema%20de%20Ficheros%20HDFS%20en%20Hadoop)
 
-[Operaciones básicas de archivos de línea de comandos de HDFS](https://github.com/miguelmontcerv/BigData)
+[Operaciones básicas de archivos de línea de comandos de HDFS](https://github.com/miguelmontcerv/BigData/tree/main/Operaciones%20b%C3%A1sicas%20de%20archivos%20de%20l%C3%ADnea%20de%20comandos%20de%20HDFS)
 
-[Introducción a Apache Spark](https://github.com/miguelmontcerv/BigData)
+[Introducción a Apache Spark](https://github.com/miguelmontcerv/BigData/tree/main/Introducci%C3%B3n%20a%20Apache%20Spark)
 
-[Manipulación de datos con Python y R en Apache Spark](https://github.com/miguelmontcerv/BigData)
+[Uso de componentes de Spark](https://github.com/miguelmontcerv/BigData/tree/main/Uso%20de%20componentes%20de%20Spark)
 
-[Análisis de Big Data con Spark](https://github.com/miguelmontcerv/BigData)
+[Análisis de Big Data con Spark](https://github.com/miguelmontcerv/BigData/tree/main/An%C3%A1lisis%20de%20Big%20Data%20con%20Spark)
 
-[Introducción a NoSQL: Apache Cassandra](https://github.com/miguelmontcerv/BigData)
+[Introducción a NoSQL: Apache Cassandra](https://github.com/miguelmontcerv/BigData/tree/main/Introducci%C3%B3n%20a%20NoSQL%20Apache%20Cassandra)
 
 Espero este resumen les pueda ser de gran ayuda y siempre recuerden *Los datos nunca mienten*.
