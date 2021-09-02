@@ -13,3 +13,32 @@ Hadoop es una estructura de software de código abierto para almacenar datos y e
 * Flexibilidad. A diferencia de las bases de datos relacionales, no tiene que procesar previamente los datos antes de almacenarlos. Puede almacenar tantos datos como desee y decidir cómo utilizarlos más tarde. Eso incluye datos no estructurados como texto, imágenes y videos.
 * Bajo costo. La estructura de código abierto es gratuita y emplea hardware comercial para almacenar grandes cantidades de datos.
 * Escalabilidad. Puede hacer crecer fácilmente su sistema para que procese más datos son sólo agregar nodos. Se requiere poca administración.
+
+Ahora que logramos entender que es Hadopp y sus ventajas, vamos a ver una parte muy importante de esta herramienta, **¿Qué es el YARN?** 
+Apache Hadoop YARN es la tecnología de gestión de recursos y programación de trabajos en el marco de procesamiento distribuido de código abierto Hadoop. YARN, uno de los componentes centrales de Apache Hadoop, es responsable de asignar recursos del sistema a las diversas aplicaciones que se ejecutan en un clúster de Hadoop y programar tareas para que se ejecuten en diferentes nodos del clúster.
+
+El término YARN proviene de las siglas de Yet Another Resource Negotiator, pero comúnmente se lo denomina solo por el acrónimo; el nombre completo era humor autocrítico por parte de sus desarrolladores. La tecnología se convirtió en un subproyecto de Apache Hadoop dentro de Apache Software Foundation (ASF) en 2012 y fue una de las características clave agregadas en Hadoop 2.0, que se lanzó para pruebas ese año y estuvo disponible de forma generalizada en octubre de 2013.
+
+La adición de YARN expandió significativamente los usos potenciales de Hadoop. La encarnación original de Hadoop emparejó estrechamente el Sistema de archivos distribuido de Hadoop (HDFS) con el marco de programación y el motor de procesamiento MapReduce orientado por lotes, que también funcionó como administrador de recursos y programador de trabajos de la plataforma de big data. Como resultado, los sistemas Hadoop 1.0 solo podían ejecutar aplicaciones MapReduce —una limitación que Hadoop YARN eliminó.
+
+*Algunos comandos que se utilizaron en clase fueron:*
+
+```
+$ hadoop fs -mkdir /user/USERNAME/wordcount
+$ hadoop fs -mkdir /user/USERNAME/wordcount/input
+$ hadoop fs -put /bluearc/data/schatz/data/textmining/bible+shakes.nopunc/user/mschatz/wordcount/input
+
+```
+
+## Ahora vamos a contar las palabras:
+```
+$ hadoop jar /usr/lib/hadoop/hadoop-examples.jar wordcount \
+             /user/USERNAME/wordcount/input \
+             /user/USERNAME/wordcount/output
+```             
+             
+Ahora decarga los resultados a tu repo principal
+
+```
+$ hadoop fs -get /user/USERNAME/wordcount/output output
+```
