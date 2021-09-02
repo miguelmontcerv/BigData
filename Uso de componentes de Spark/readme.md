@@ -2,33 +2,37 @@
   <img src="fondo.png" />
 </p>
 
-### 24 de Agosto del 2021
-La mayoría de personas que estamos tomando el curso de Big Data es por que recientemente terminamos el curso de Data Analytics, o por otro lado, desde la introducción de este repositorio nos dimos cuenta de que la necesidad de almacenar grandes volúmenes de datos surge como conciencia del análisis de datos que las grandes empresas realizaban para incrementar sus ganancias, entonces, es natural que se busque realizar análisis de datos en volúmenes enormes utilizando las herramientas con las que hemos trabajado anteriormente como Spark o Hadoop, debido a que en la última sesión trabajamos con los componentes de Spark, utilizaremos algunos métodos para el análisis, los métodos los definiremos de la siguiente manera:
-#### Reduce()
-Realiza una agregación del conjunto de datos de entrada, lo que suele ser un resultado de una función Map
-#### Collect()
-Devuelve el contenido del RDD sobre el que lo llamamos de vuelta al programa conductor (driver). Habitualmente es un subconjunto de los datos de entrada que hemos transformado y filtrado aplicando alguna de las transformaciones disponibles.
-#### Count()
-Como se puede suponer devolverá el número total de elementos que hay en un RDD
-#### Take(n)
-Se trata de una función muy util que permite echar una ojeada a los datos resultantes del proceso al permitir obtener los primeros n elementos del RDD.
-#### Transformaciones
-Como sugiere el nombre, las transformaciones nos ayudan a transformar los RDD existentes. Como resultado, siempre crean un nuevo RDD que se calcula de forma perezosa. En los ejemplos anteriores, hemos discutido muchas transformaciones, como map(), filter() y reduceByKey().
-Las transformaciones son de dos tipos:
-Transformaciones estrechas (Narrow transformations)
-Transformaciones amplias (Wide transformations)
-El código desarrollado en clase fue el siguiente:
-```
-result = rdd.groupBy(lambda x: x % 2).collect()# [(0, SparkIterable(2,8) )]
-print(result)
-print([(x, y) for (x, y) in result])
-print([(x, list(y)) for (x, y) in result])
-print([(x, sorted(y)) for (x, y) in result])
-print(sorted([(x, sorted(y)) for (x, y) in result]))
+### 19 de Agosto del 2021
+Como pudimos ver en la clase pasada, Spark es una buena solución cuando se quiere obtener algunas ventajas sobre Hadoop, para poder utilizar esta tecnología, además de configurar el ambiente de trabajo, se deben entender algunos conceptos principales, como la definición de un RDD:
+
+Cada aplicación Spark consta de un programa controlador que ejecuta la función principal del usuario y ejecuta varias operaciones paralelas en un clúster. La principal abstracción que proporciona Spark es un “conjunto de datos distribuido resistente” o mejor dicho, Resilient Distributed Dataset (RDD), lo cual es una colección de elementos particionados en los nodos del clúster que se pueden operar en paralelo. Los RDD se crean comenzando con un archivo en el sistema de archivos Hadoop (o cualquier otro sistema de archivos compatible), o incluso una colección Scala existente en el programa del controlador, y transformándola. Los usuarios también pueden pedirle a Spark que conserve un RDD en la memoria, lo que le permitirá reutilizarlo de manera eficiente en operaciones paralelas. Por último, los RDD se recuperan automáticamente de las fallas de los nodos.
+
+Una segunda abstracción en Spark son las variables compartidas que se pueden usar en operaciones paralelas. De forma predeterminada, cuando Spark ejecuta una función en paralelo como un conjunto de tareas en diferentes nodos, envía una copia de cada variable utilizada en la función a cada tarea. A veces, es necesario compartir una variable entre las tareas o entre las tareas y el programa del controlador. Spark admite dos tipos de variables compartidas: variables de transmisión, que se pueden usar para almacenar en caché un valor en la memoria en todos los nodos, y acumuladores, que son variables a las que solo se "agregan", como contadores y sumas.
+
+En el caso de Python, tenemos a PySpark, la cual es una interfaz para Apache Spark en Python. No solo le permite escribir aplicaciones Spark utilizando las API de Python, sino que también proporciona el shell de PySpark para analizar interactivamente sus datos en un entorno distribuido. PySpark es compatible con la mayoría de las funciones de Spark, como Spark SQL, DataFrame, Streaming, MLlib (aprendizaje automático) y Spark Core.
+
+Los comandos utilizados en clase fueron:
+ ```
+export SPARK_HOME = ~/spark-3.1.2-bin-hadoop3.2
+export PATH = $PATH:$SPARK_HOME/sbin
+export PATH = $PATH:$SPARK_HOME/bin
 
 
+sudo apt install unzip
 
-result2 = rdd.groupBy(lambda x: x % 2).mapValues(list).collect()
+from pyspark import SparkConf, SparkContext
+import collections
 
-print(result2)
-```
+conf = SparkConf().setMaster("local").setAppName("RatingsHistogram")
+sc = SparkContext(conf = conf)
+
+lines = sc.textFile("file:///home/ubuntu/ml-100k/u.data")
+ratings = lines.map(lambda x: x.split()[2])
+result = ratings.countByValue()
+
+sortedResults = collections.OrderedDict(sorted(result.items()))
+for key, value in sortedResults.items():
+    print("%s %i" % (key, value))
+
+spark-submit  ratings-counter.py
+  ```
