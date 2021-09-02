@@ -3,7 +3,7 @@
 </p>
 
 En la clase pasada ya habíamos hablado un poco de YARN, para recapitular ¿Qué es YARN? Es la tecnología de gestión de recursos y programación de trabajos en el marco de procesamiento distribuido de código abierto Hadoop. YARN, uno de los componentes centrales de Apache Hadoop, es responsable de asignar recursos del sistema a las diversas aplicaciones que se ejecutan en un clúster de Hadoop y programar tareas para que se ejecuten en diferentes nodos del clúster.
-Ahora que entendimos que es YARN, haremos uso de su herramienta Map Reduce, pero antes debemos de definirla, para esto haremos uso del *texto proporcionado por Bedu ya que me gustó mucho la manera en que lo explican:*
+Ahora que entendimos que es YARN, haremos uso de su herramienta Map Reduce, pero antes debemos de definirla, para esto haremos uso del **texto proporcionado por Bedu ya que me gustó mucho la manera en que lo explican:**
 
 Map es una función que "transforma" elementos de algún tipo de lista en otro tipo de elemento y los vuelve a colocar en el mismo tipo de lista.
 
@@ -30,7 +30,7 @@ la x => x * 2 es una función que se ejecutará contra los elementos en [1,2,3].
 
 Así que después de ejecutar la función de mapa con (x => x * 2) tendrías [2, 4, 6].
 
-## Ahora... Que es Reduce?
+**Ahora, Que es Reduce?**
 
 Reducir es una función que "recopila" los elementos en listas y realiza algunos cálculos en todos ellos, reduciéndolos así a un solo valor.
 
