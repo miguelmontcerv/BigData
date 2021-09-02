@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="Images/portada1.png" />
+  <img src="fondo.png" />
 </p>
-
 ### 27 de Julio del 2021
 En la clase pasada ya habíamos hablado un poco de YARN, para recapitular ¿Qué es YARN? Es la tecnología de gestión de recursos y programación de trabajos en el marco de procesamiento distribuido de código abierto Hadoop. YARN, uno de los componentes centrales de Apache Hadoop, es responsable de asignar recursos del sistema a las diversas aplicaciones que se ejecutan en un clúster de Hadoop y programar tareas para que se ejecuten en diferentes nodos del clúster.
 Ahora que entendimos que es YARN, haremos uso de su herramienta Map Reduce, pero antes debemos de definirla, para esto haremos uso del **texto proporcionado por Bedu ya que me gustó mucho la manera en que lo explican:**
