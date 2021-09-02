@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Images/portada1.png" />
+  <img src="portada.png" />
 </p>
 
 ### 20 de Julio del 2021 
