@@ -26,18 +26,44 @@ Apache Spark proporciona un Spark interactivo. Ayuda a que las aplicaciones Spar
 Durante el desarrollo de esta práctica fue necesario crear una cuenta en **AWS** en la cual se crearon algunas instancias de máquinas virtuales, para después acceder a ellas desde la línea de comandos de nuestras computadoras locales, una vez que se realizó eso, lo siguiente fue configurar el ambiente de desarrollo, donde instalamos Python y Spark, los comandos que utilizamos fueron los siguientes:
 ```
 sudo apt-get update
-sudo apt-get install python3.6
 
-cd / opt
-tar -xzvf spark-3.1.2-bin-hadoop2.7.tgz
+sudo apt install python3-pip
 
-nano ~ / .bash_profile
+pip3 install jupyter
 
+sudo apt-get install default.jre
 
-export SPARK_HOME = / opt / spark-3.1.2
-export PATH = $ PATH: $ SPARK_HOME / sbin
-export PATH = $ PATH: $ SPARK_HOME / bin
+sudo apt-get install scala
 
+pip3 install py4j
 
-source ~ / .bash_profile
+wget https://downloads.apache.org/spark/spark-3.1.2/spark-3.1.2-bin-hadoop3.2.tgz
+
+sudo tar -zxvf spark-3.1.2-bin-hadoop3.2.tgz
+
+pip3 install findspark
+
+jupyter notebook --generate-config
+
+mkdir certs
+
+cd certs
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out mycert.pem
+
+cd ~/.jupyter/
+
+nano jupyter_notebook_config.py
+
+Poner esto al principio del archivo
+
+c =get_config()
+c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem'
+c.NotebookApp.ip = '*'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 8888
+
+sudo chmod 644 mycert.pem
+cd ~/.jupyter/
+jupyter notebook
 ```
