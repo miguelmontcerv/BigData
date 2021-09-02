@@ -21,3 +21,23 @@ Resilient Distributed Dataset - RDD
 Resilient Distributed Dataset (RDD) es la unidad fundamental de datos en Apache Spark, que es una colección distribuida de elementos en los nodos del clúster y puede realizar operaciones paralelas. Los RDD de Spark son inmutables, pero pueden generar nuevos RDD transformando los RDD existentes.
 #### Spark Shell
 Apache Spark proporciona un Spark interactivo. Ayuda a que las aplicaciones Spark se ejecuten fácilmente en la línea de comandos del sistema. Usando el shell Spark podemos ejecutar / probar el código de nuestra aplicación de forma interactiva. Spark puede leer de muchos tipos de fuentes de datos para poder acceder y procesar una gran cantidad de datos.
+
+#### Configuración de la nube
+Durante el desarrollo de esta práctica fue necesario crear una cuenta en **AWS** en la cual se crearon algunas instancias de máquinas virtuales, para después acceder a ellas desde la línea de comandos de nuestras computadoras locales, una vez que se realizó eso, lo siguiente fue configurar el ambiente de desarrollo, donde instalamos Python y Spark, los comandos que utilizamos fueron los siguientes:
+```
+sudo apt-get update
+sudo apt-get install python3.6
+
+cd / opt
+tar -xzvf spark-3.1.2-bin-hadoop2.7.tgz
+
+nano ~ / .bash_profile
+
+
+export SPARK_HOME = / opt / spark-3.1.2
+export PATH = $ PATH: $ SPARK_HOME / sbin
+export PATH = $ PATH: $ SPARK_HOME / bin
+
+
+source ~ / .bash_profile
+```
